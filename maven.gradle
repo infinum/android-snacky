@@ -1,0 +1,24 @@
+/*
+* There are 2 possible approaches to retrieving previously defined sonatype credentials and setting it on a sonatype file:
+*
+*    Option 1:
+*       - findProperty("SOME_PROPERTY") - use parameter from the command (if attached) so you can run ->
+*         ./gradlew deploy -PsonatypeSOME_PROPERTY_NAME={SOME_PROPERTY_VALUE} -PsonatypeSOME_PROPERTY_NAME_2={SOME_PROPERTY_VALUE_2}
+*
+*    Option 2:
+*       - System.getenv("SONATYPE_PASS"): use global variable defined in the system. You can simply run -> ./gradlew deploy
+* */
+ext.sonatype = [
+
+        url     : "https://oss.sonatype.org/service/local/staging/deploy/maven2",
+
+                  // Option 1
+        username: findProperty("sonatypeUsername")?.toString()
+                  // Option 2
+                ?: System.getenv("SONATYPE_USERNAME"),
+
+                  // Option 1
+        password: findProperty("sonatypePassword")?.toString()
+                  // Option 2
+                ?: System.getenv("SONATYPE_PASS")
+]
