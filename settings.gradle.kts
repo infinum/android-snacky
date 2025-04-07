@@ -1,6 +1,18 @@
-include(":libModule1")
-include(":libModule2")
-include(":sample")
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
 
-// TODO - add project name
-rootProject.name = "Android Library Template"
+rootProject.name = "Android Snacky"
+
+include(":sample")
+include(":snacky")

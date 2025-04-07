@@ -1,11 +1,10 @@
 extra["buildConfig"] = mapOf(
     "minSdk" to 28,
-    "compileSdk" to 35,
-    "targetSdk" to 35
+    "compileSdk" to 34,
+    "targetSdk" to 34
 )
 
 extra["releaseConfig"] = mapOf(
-    // TODO - com.infinum.<YOUR-AWESOME-LIBRARY-NAME>
-    "group" to "com.infinum.libname",
-    "version" to "0.0.1"
+    "group" to "com.infinum.snacky",
+    "version" to "0.1.0"
 )
