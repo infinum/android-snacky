@@ -1,6 +1,7 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.compose.compiler)
 }
 
 apply {
@@ -13,13 +14,11 @@ val releaseConfig: Map<String, Any> by project
 val sonatype: Map<String, Any> by project
 
 android {
-    // TODO - com.infinum.<YOUR-AWESOME-LIBRARY-NAME>.sample
-    namespace = "com.infinum.libname.sample"
+    namespace = "com.infinum.snacky.sample"
     compileSdk = buildConfig["compileSdk"] as Int
 
     defaultConfig {
-        // TODO - com.infinum.<YOUR-AWESOME-LIBRARY-NAME>.sample
-        applicationId = "com.infinum.libname.sample"
+        applicationId = "com.infinum.snacky.sample"
         minSdk = buildConfig["minSdk"] as Int
         targetSdk = buildConfig["targetSdk"] as Int
         versionCode = 1
@@ -42,19 +41,17 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+    buildFeatures {
+        compose = true
+    }
 }
 
 dependencies {
-
-    // TODO - replace with your module names accordingly
-    // Comment this out for testing local deploy
-    implementation(project(":libModule1"))
-    implementation(project(":libModule2"))
-
-    // TODO - replace with your module packages accordingly
-    // Uncomment this for testing local deploy
-    //    implementation(packages.android-libname.libModule1)
-    //    implementation(packages.android-libname.libModule2)
+    implementation(project(":snacky"))
 
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.material3.android)
+    implementation(libs.compose.ui.tooling)
+    implementation(libs.compose.ui.tooling.preview)
 }
