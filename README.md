@@ -1,6 +1,34 @@
 # Android Snacky
 
+<!--
+    This is the logo/image area for the project.
+    Add a project logo or image (if applicable) to this part of the file.
+
+    Try to make it visually appealing and relevant to the project.
+    Check the *Credits* section as an example for a centered image.
+-->
+
+<!--
+    This is the status area for the project.
+    Add project badges (if needed) to this part of the file.
+-->
+
+## Description
+
 Android library for enhancing the snackbar experience with Jetpack Compose. Snacky allows developers to create fully customizable snackbars without the limitations of the built-in options. Easily implement dynamic snackbars with various styles, actions, and behaviors tailored to your application’s unique needs.
+
+## Table of contents
+
+* [Requirements](#requirements)
+* [Getting started](#getting-started)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [License](#license)
+* [Credits](#credits)
+
+## Requirements
+
+Minimum supported Android version: API level 28 (Android 9)
 
 ## Getting started
 
@@ -149,13 +177,16 @@ scope.launch {
 
 Also, check the [sample app](sample) for more detailed examples.
 
-## Requirements
-
-Minimum supported Android version: API level 28 (Android 9)
-
 ## Contributing
 
-Feedback and code contributions are very much welcome. Just make a pull request with a short description of your changes. By making contributions to this project you give permission for your code to be used under the same [license](LICENSE).
+We believe that the community can help us improve and build better a product.
+Please refer to our [contributing guide](CONTRIBUTING.md) to learn about the types of contributions we accept and the process for submitting them.
+
+To ensure that our community remains respectful and professional, we defined a [code of conduct](CODE_OF_CONDUCT.md) that we expect all contributors to follow.
+
+For easier developing a `sample` application with proper implementations is provided.
+
+We appreciate your interest and look forward to your contributions.
 
 ## License
 
@@ -176,13 +207,14 @@ limitations under the License.
 ```
 
 ## Credits
+
 Maintained and sponsored by [Infinum](http://www.infinum.com).
 
-<p align="center">
-  <a href='https://infinum.com'>
+<div align="center">
+    <a href='https://infinum.com'>
     <picture>
         <source srcset="https://assets.infinum.com/brand/logo/static/white.svg" media="(prefers-color-scheme: dark)">
         <img src="https://assets.infinum.com/brand/logo/static/default.svg">
     </picture>
-  </a>
-</p>
+    </a>
+</div>
