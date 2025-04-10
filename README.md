@@ -17,6 +17,13 @@
 
 Android library for enhancing the snackbar experience with Jetpack Compose. Snacky allows developers to create fully customizable snackbars without the limitations of the built-in options. Easily implement dynamic snackbars with various styles, actions, and behaviors tailored to your application’s unique needs.
 
+<p float="left">
+    <img src="https://github.com/user-attachments/assets/2fea7371-8710-4551-adfe-db87e94cdc85" width="220" />
+    <img src="https://github.com/user-attachments/assets/98002f54-0958-4676-9080-4db3e5157ec3" width="220" />
+    <img src="https://github.com/user-attachments/assets/d4ba82e9-c2e2-4b9d-a039-f38d458edccd" width="220" /> 
+    <img src="https://github.com/user-attachments/assets/8afcc3f1-c9f7-4803-a9fb-63681496d662" width="220" />
+</p>
+
 ## Table of contents
 
 * [Requirements](#requirements)
@@ -175,7 +182,10 @@ scope.launch {
 }
 ```
 
+
 Also, check the [sample app](sample) for more detailed examples.
+
+https://github.com/user-attachments/assets/cb9dd53d-aee9-4552-bf32-446d4876fdc2
 
 ## Contributing
 
