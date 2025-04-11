@@ -1,3 +1,5 @@
+### <img align="left" src="resources/logo.svg" width="48">
+
 # Android Snacky
 
 <!--
