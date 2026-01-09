@@ -91,7 +91,6 @@ public class SnackyHostState {
      *
      * @param snackyData [SnackyData] that are used to create a custom Snackbar
      */
-    @Suppress("OptionalUnit")
     public suspend fun showSnackbar(snackyData: SnackyData): Unit =
         mutex.withLock {
             try {
