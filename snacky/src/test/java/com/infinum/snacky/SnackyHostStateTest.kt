@@ -141,6 +141,30 @@ class SnackyHostStateTest {
     }
 
     @Test
+    fun `performSecondaryAction should invoke onSecondaryActionCallback`() = runTest {
+        // Given
+        val secondaryActionCallback = mockk<() -> Unit>(relaxed = true)
+        val customData = TestSnackyData(
+            duration = SnackyDuration.Short,
+            onDismissCallback = {},
+            onSecondaryActionCallback = secondaryActionCallback
+        )
+
+        // When
+        val job = launch(UnconfinedTestDispatcher(testScheduler)) {
+            hostState.showSnackbar(customData)
+        }
+
+        // Then
+        assertNotNull(hostState.currentSnackyState)
+        hostState.currentSnackyState?.performSecondaryAction()
+
+        // Verify callback was invoked
+        verify { secondaryActionCallback() }
+        job.join()
+    }
+
+    @Test
     fun `dismiss should invoke onDismissCallback`() = runTest {
         // Given
         val message = "Test message"
