@@ -50,6 +50,7 @@ public class SnackyHostState {
      * @param hasDismissAction a boolean to show a dismiss action in the Snackbar. This is
      *   recommended to be set to true for better accessibility when a Snackbar is set with a
      *   [SnackyDuration.Indefinite]
+     * @param dismissActionContentDescription the content description for the dismiss action
      * @param onActionCallback the callback to be called when the action is performed
      * @param onDismissCallback the callback to be called when the Snackbar is dismissed
      * @param duration duration to control how long snackbar will be shown in [SnackyHost], either
@@ -90,6 +91,7 @@ public class SnackyHostState {
      *
      * @param snackyData [SnackyData] that are used to create a custom Snackbar
      */
+    @Suppress("OptionalUnit")
     public suspend fun showSnackbar(snackyData: SnackyData): Unit =
         mutex.withLock {
             try {

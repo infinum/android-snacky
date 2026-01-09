@@ -24,6 +24,7 @@ import com.infinum.snacky.SnackyState
  * For displaying a widely applicable and commonly used material3 [Snackbar]
  *
  * @param message message to be displayed in the snackbar
+ * @param dismissActionContentDescription the content description for the dismiss action
  * @param modifier for customizing the appearance and layout of the snackbar
  * @param hasDismissAction a boolean indicating whether the snackbar should have a dismiss action
  * @param actionLabel text for the action button, if any
@@ -36,7 +37,6 @@ import com.infinum.snacky.SnackyState
  * @param actionColor the color of the action button
  * @param actionContentColor the color of the action button content
  * @param dismissActionContentColor the color of the dismiss action content
- * @param dismissActionContentDescription the content description for the dismiss action
  */
 @Composable
 public fun DefaultSnackbar(
@@ -100,6 +100,7 @@ public fun DefaultSnackbar(
  * @property message message to be displayed in the snackbar
  * @property actionLabel label for the action button, if any
  * @property withDismissAction a boolean indicating whether the snackbar should have a dismiss action
+ * @property dismissActionContentDescription the content description for the dismiss action
  * @property duration duration for which the snackbar should be displayed
  * @property onDismissCallback the callback to be executed when the snackbar is dismissed
  * @property onMainActionCallback the callback to be executed when the main action button is clicked

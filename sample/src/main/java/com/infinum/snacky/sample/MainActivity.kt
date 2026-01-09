@@ -24,9 +24,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.infinum.snacky.SnackyAnimationSpec
@@ -35,8 +35,8 @@ import com.infinum.snacky.SnackyHost
 import com.infinum.snacky.SnackyHostState
 import com.infinum.snacky.rememberSnackyHostState
 import com.infinum.snacky.sample.ui.snackbars.AppInfoSnackbarData
-import com.infinum.snacky.sample.ui.snackbars.PersonalMessageSnackbarData
 import com.infinum.snacky.sample.ui.snackbars.DeviceDisconnectedSnackbarData
+import com.infinum.snacky.sample.ui.snackbars.PersonalMessageSnackbarData
 import kotlin.time.Duration.Companion.seconds
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -227,7 +227,7 @@ private fun CoroutineScope.launchPersonalMessageSnackbar(
             PersonalMessageSnackbarData(
                 title = "Hi Ivy,",
                 message = "Welcome to the world of Snacks! Explore the endless possibilities with delicious treats and discover the" +
-                        "exciting flavors waiting for you while enjoying every delightful moment with this informative guide!",
+                    "exciting flavors waiting for you while enjoying every delightful moment with this informative guide!",
                 actionLabel = "View",
                 duration = SnackyDuration.Long,
                 icon = android.R.drawable.ic_dialog_info,
