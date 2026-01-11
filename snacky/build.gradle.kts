@@ -94,7 +94,7 @@ tasks.withType<Test> {
         showStandardStreams = false
         
         // Display summary after test execution
-        afterSuite(KotlinClosure2({ desc: TestDescriptor, result: TestResult ->
+        afterSuite(KotlinClosure2<TestDescriptor, TestResult, Unit>({ desc, result ->
             if (desc.parent == null) { // Only execute for the overall test suite
                 println("\nTest Results: ${result.resultType}")
                 println("Tests run: ${result.testCount}, " +

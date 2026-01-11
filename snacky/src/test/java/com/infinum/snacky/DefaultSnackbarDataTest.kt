@@ -166,7 +166,7 @@ class DefaultSnackbarDataTest {
     }
 
     @Test
-    fun `hasAction should be true when no callbacks are explicitly provided`() {
+    fun `hasAction should be true when using default callbacks`() {
         // Given - Using default callbacks (interface provides default empty lambdas)
         val data = DefaultSnackbarData(
             message = "Test",
@@ -179,6 +179,7 @@ class DefaultSnackbarDataTest {
         // Then
         // Note: Due to Kotlin lambda comparison behavior, hasAction will be true
         // even with default empty callbacks because each {} creates a new instance
+        // -> check if code can be improved
         assertEquals(true, data.hasAction)
     }
 
