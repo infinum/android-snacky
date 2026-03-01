@@ -69,5 +69,6 @@ extra["mavenPublishProperties"] = mapOf(
 dependencies {
 
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.material.icons.core)
     implementation(libs.androidx.material3.android)
 }
