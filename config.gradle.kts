@@ -1,7 +1,7 @@
 extra["buildConfig"] = mapOf(
     "minSdk" to 28,
-    "compileSdk" to 36,
-    "targetSdk" to 36
+    "compileSdk" to 37,
+    "targetSdk" to 37
 )
 
 extra["releaseConfig"] = mapOf(

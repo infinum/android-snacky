@@ -13,5 +13,11 @@ buildscript {
         classpath(libs.tools.gradle)
         classpath(libs.kotlin.plugin)
         classpath(libs.dokka.plugin)
+
+        // Pin AGP's vulnerable transitive build-time deps to patched versions (Dependabot CVEs).
+        constraints {
+            classpath(libs.bouncycastle.bcprov)
+            classpath(libs.jackson.databind)
+        }
     }
 }
