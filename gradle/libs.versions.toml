@@ -1,6 +1,6 @@
 [versions]
 activityCompose = "1.13.0"
-androidGradlePlugin = "9.2.1"
+androidGradlePlugin = "9.3.0"
 appcompat = "1.7.1"
 compose = "1.11.4"
 composeIcons = "1.7.8"
