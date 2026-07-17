@@ -2,13 +2,11 @@
 activityCompose = "1.13.0"
 androidGradlePlugin = "9.2.1"
 appcompat = "1.7.1"
-bouncycastle = "1.80.2"
 compose = "1.11.4"
 composeIcons = "1.7.8"
 coreKtx = "1.19.0"
 detekt = "1.23.8"
 dokka = "2.2.0"
-jacksonDatabind = "2.18.8"
 kotlin = "2.4.10"
 material3Android = "1.4.0"
 
@@ -25,11 +23,9 @@ androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "a
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
 androidx-material-icons-core = { module = "androidx.compose.material:material-icons-core", version.ref = "composeIcons" }
 androidx-material3-android = { module = "androidx.compose.material3:material3-android", version.ref = "material3Android" }
-bouncycastle-bcprov = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bouncycastle" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
 dokka-plugin = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
-jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jacksonDatabind" }
 kotlin-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 tools-gradle = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
