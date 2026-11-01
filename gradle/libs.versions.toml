@@ -1,13 +1,13 @@
 [versions]
 activityCompose = "1.13.0"
-androidGradlePlugin = "9.4.1"
+androidGradlePlugin = "9.5.0"
 appcompat = "1.8.0"
 compose = "1.12.1"
 composeIcons = "1.7.8"
 coreKtx = "1.19.1"
 detekt = "1.23.8"
 dokka = "2.2.0"
-kotlin = "2.4.20"
+kotlin = "2.4.21"
 material3Android = "1.4.0"
 
 [plugins]
