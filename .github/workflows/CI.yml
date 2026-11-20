@@ -50,6 +50,12 @@ jobs:
           key: gradle-caches-${{ runner.os }}-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             gradle-caches-${{ runner.os }}-
+      # detekt 1.23.x cannot run on JDK 23+ (ubuntu-latest now defaults to JDK 25)
+      - name: Setup Java
+        uses: actions/setup-java@v6
+        with:
+          distribution: 'temurin'
+          java-version: 21
       - name: Detekt
         run: ./gradlew detekt
       - name: Stop Gradle
